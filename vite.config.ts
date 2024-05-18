@@ -7,6 +7,7 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
     host: true,
+    cors: true,
     proxy: {
       "/.netlify": "http://localhost:9999/.netlify"
     },
