@@ -13,7 +13,12 @@ export default defineConfig({
         target: "https://storied-biscuit-773d0e.netlify.app",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
-      }
+      },
+    },
+    headers: {
+      "Access-Control-Allow-Origin": "https://smart-floor-5017.puter.site",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
     },
   },
   build: {
