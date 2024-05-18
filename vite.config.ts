@@ -8,12 +8,7 @@ export default defineConfig({
     strictPort: true,
     host: true,
     proxy: {
-      "/.netlify": "http://localhost:9999/.netlify",
-      "/api": {
-        target: "https://storied-biscuit-773d0e.netlify.app",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
+      "/.netlify": "http://localhost:9999/.netlify"
     },
     headers: {
       "Access-Control-Allow-Origin": "https://smart-floor-5017.puter.site",
