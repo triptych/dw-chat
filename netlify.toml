@@ -12,3 +12,8 @@
 
 [template.environment]
   ABLY_API_KEY = "change me to your Ably API key"
+
+ [[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
